@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Autocomplete-酒店首页</title>
+	<style type="text/css">
+	html, body, div, span p, blockquote, cite, a, abbr, acronym, address, em, strong, img, dl, dt, dd, ol, ul, li, form, fieldset, legend, label{border: 0 none;font-style: inherit;margin: 0; outline: 0 none;padding: 0;vertical-align: baseline;}
+.clear{ clear:both}
+	.cityout{clear:both;position:relative;height:0;}
+.citybox{z-index:99; position:absolute;top:0;background-color:#fff; width:332px; border:1px solid #bcbeb3;border-top:none; box-shadow:0 5px 12px #666; -moz-box-shadow:0 5px 12px #666; -webkit-box-shadow:0 5px 12px #666; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+.citybox .title{line-height:32px;height:32px;color:#000;background:#e8f0f6 url(http://js.youtx.com/images/citytitle_icon.gif) no-repeat 8px 11px;padding-left:22px;overflow:hidden;border-radius:5px;}
+.citybox .tab{padding:0 0 1px 8px; _padding-bottom:0; width:auto;height:32px;background:url(http://js.youtx.com/images/citytab_line.png) left bottom repeat-x;border-radius:5px;}
+.citybox .tab a{display:block;float:left;height:24px;line-height:24px;padding:0 6px;border-top:1px solid #fff;text-decoration:none;text-align:center;margin-top:8px;overflow:hidden;margin-right:1px;}
+.citybox .tab a:hover{height:23px;line-height:24px;padding:0 6px;border-bottom:1px solid #ddd;color:#000;font-weight:700;background:#fff;border-top-left-radius:4px;border-top-right-radius:5px;}
+.citybox .tab a.current{height:24px;line-height:24px;padding:0 6px;border:1px solid #ddd;border-bottom:none;color:#000;font-weight:700;background:#fff;border-top-left-radius:4px;border-top-right-radius:5px;}
+.citybox .citycontent{clear:both;padding:10px 0 10px 10px;}
+.citybox .citycontent a{display:block;float:left;margin-left:5px;padding:5px;width:65px;color:#787878;text-align:left;font-size:12px;line-height:16px;height:16px;}
+.citybox .citycontent a:hover, .citybox .citycontent .current{color:#008bda;font-weight:700;text-decoration:none;}
+.citybox .citycontent p.spe{clear:both; border-top:1px dashed #eee; *padding-top:10px;}
+.citybox .close{float:right;width:14px;height:14px;margin:9px 8px 0 0;background:url(http://js.youtx.com/images/city_ico_close.gif) no-repeat;text-decoration:none;display:inline;}
+.citybox .close:hover,.citybox .close:visited{text-decoration:none;}
+.city_iconbox{height:0px;line-height:0px;width:0px;float:left;position:relative;}
+.city_iconbox .cityicon{position:absolute;right:0;top:0;display:block;width:28px;height:40px;background:url(http://js.youtx.com/images/citylisti.gif) 4px center no-repeat;cursor:pointer;}
+.city_iconbox .cityicon:hover{background:url(http://js.youtx.com/images/citylisti.gif) 4px center no-repeat;}
+.citybox_shu{z-index:100; position:absolute;top:0;background-color:#fff; width:330px; border:1px solid #bcbeb3;border-top:none; box-shadow:0 5px 12px #666; -moz-box-shadow:0 5px 12px #666; -webkit-box-shadow:0 5px 12px #666; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+.citybox_shu dl{}
+.citybox_shu dt{height:24px;line-height:24px;border-bottom:1px dotted #bdbdbd;padding:0 5px;}
+.citybox_shu dd{clear:both;padding:0 5px;height:26px;line-height:26px;cursor:pointer;}
+.citybox_shu dd.on{background:#FFE3F2;}
+.cityhy{float:right;width:70px;height:26px;overflow:hidden;text-align:right;}
+.citypy{width:110px;height:26px;overflow:hidden;}
+.cityhyword{width:180px;height:26px;overflow:hidden;font-size:14px; font-family:微软雅黑;}
+.citybox_no{z-index:101;position:absolute;top:-1px;width:136px;height:24px;line-height:24px;text-align:center;background:#ffeeab;border:1px solid #b8890d;color:#8a6400;box-shadow:0 5px 12px #666; -moz-box-shadow:0 5px 12px #666; -webkit-box-shadow:0 5px 12px #666; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+.wordactive{color:#333;}
+.wordcolor{color:#999999;}
+.pink{color:#E0007A;}
+.iframeie6{width:0;height:0;_width:327px;_height:100px;top:0;left:1px;position:absolute;z-index:-1;_filter:alpha(opacity=0);display:none;_display:block;}
+	</style>
+    <script type="text/javascript" src="http://js.40017.cn/cn/public/fish.1.2.js?v=2012072401"></script>
+
+
+</head>
+<body>
+
+	<div>
+		<input type="text" id="txtHotelInfo" name="txtHotelInfo" value="商圈/行政区/地标" autocomplete="off" />
+
+	</div>
+<div id="CitiesSuggestion" class="cityout" style="z-index: 999; display: block;">
+		
+</div>
+		<script type="text/javascript" src="search.js"></script>
+</body>
+</html>
